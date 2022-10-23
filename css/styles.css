@@ -1,8 +1,198 @@
+/* css змінні */
+/* var(--обираєш колір) */
+/* :root {
+	--primary-text-color: #000000;
+	--title-text-coior: #212121;
+	--accent-color: #2196f3;
+} */
+
+/* line-height ділимо на font-size і пишемо без рх*/
+/* list-style: прибирає маркери
+    text-decoration: прибирає підкреслення*/
+
+/* ===============================ВебСтудія============================== */
+:root {
+	--main-title-color: #212121;
+	--text-color: #757575;
+	--accent-color: #2196f3;
+}
 body {
 	font-family: "Roboto", "Raleway";
-}
-ul {
-	list-style: none;
+	color: #757575;
 }
 
-/* ==========HEADER========== */
+/* дефолтний клас */
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+
+/* ==========Шапка/Навігація/Хедер========== */
+
+.logo {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.192;
+	letter-spacing: 0.03em;
+	color: var(--accent-color);
+}
+.logo-header {
+	color: #000000;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.143;
+	letter-spacing: 0.02em;
+	color: var(--main-title-color);
+	list-style: none;
+}
+.nav-link:hover {
+	color: var(--accent-color);
+}
+.nav-link:focus {
+	color: var(--accent-color);
+}
+.contact {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.143;
+	letter-spacing: 0.02em;
+	color: var(--text-color);
+}
+.contact:hover,
+.contact:focus {
+	color: var(--accent-color);
+}
+
+/* ==========Секція 1/Hero========== */
+.hero {
+	background-color: #2f303a;
+}
+.hero-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.364;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.main-btn {
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	cursor: pointer;
+	background-color: transparent;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+}
+
+/* =========Секція 2/Skills========== */
+.skills-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-title-color);
+}
+.skills-text {
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+}
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-title-color);
+}
+
+/* =========КОМАНДА========= */
+.team-title {
+	font-size: 16px;
+	line-height: 1.188;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--main-title-color);
+}
+.team-text {
+	font-size: 16px;
+	line-height: 1.188;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* =========ПІДВАЛ========= */
+.logo-footer {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.192;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+}
+.footer {
+	background-color: #2f303a;
+}
+.address {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+}
+/* ====================ПОРТФОЛІО==================== */
+.btn {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.625;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+	cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+	background: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.625;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	border: none;
+}
+.title-projects {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: #212121;
+}
+.projects {
+	font-size: 16px;
+	line-height: 1.875;
+	letter-spacing: 0.03em;
+}

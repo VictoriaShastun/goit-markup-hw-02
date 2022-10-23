@@ -14,35 +14,41 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
+		<!-- Шапка/Навігація/Хедер -->
 		<header class="header">
-			<nav class="nav-header">
-				<a class="logo" href="WebStudio">
-					Web
-					<span class="logo-header">Studio</span>
-				</a>
-				<ul class="site-nav">
-					<li class="site-nav-item"><a href="Студія">Студія</a></li>
-					<li class="site-nav-item"><a href="Портфоліо">Портфоліо</a></li>
-					<li class="site-nav-item"><a href="Контакти">Контакти</a></li>
+			<nav class="nav">
+				<!-- prettier-ignore -->
+				<a class="logo link" href="">Web<span class="logo-header">Studio</span></a>
+				<ul class="nav-list">
+					<li class="nav-item list"><a class="nav-link link" href="./index.html">Студія</a></li>
+					<li class="nav-item list"><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
+					<li class="nav-item list"><a class="nav-link link" href="">Контакти</a></li>
 				</ul>
 			</nav>
-			<a class="contact-info" href="mailto:info@devstudio.com">info@devstudio.com</a>
-			<a class="contact-info" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+			<ul class="list">
+				<li><a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li><a class="contact link" href="tel:+38 0961111111">+38 096 111 11 11</a></li>
+			</ul>
 		</header>
+
+		<!-- =========Головний контент/Mеін/Main/Hero========= -->
 		<main>
-			<section>
-				<h1>
+			<!--==========Секція 1=========  -->
+			<section class="hero">
+				<h1 class="hero-title">
 					Ефективні рішення для
 					<br />
 					вашого бізнесу
 				</h1>
-				<button type="button">Замовити послугу</button>
+				<button class="main-btn" type="button">Замовити послугу</button>
 			</section>
-			<section>
-				<ul>
+
+			<!-- ==========Секція 2========== -->
+			<section class="skills">
+				<ul class="list">
 					<li>
-						<h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-						<p>
+						<h3 class="skills-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+						<p class="skills-text">
 							Ідейні міркування, і навіть початок
 							<br />
 							повсякденної роботи з формування
@@ -51,24 +57,24 @@
 						</p>
 					</li>
 					<li>
-						<h3>ПУНКТУАЛЬНІСТЬ</h3>
-						<p>
+						<h3 class="skills-title">ПУНКТУАЛЬНІСТЬ</h3>
+						<p class="skills-text">
 							Завдання організації, особливо рамки
 							<br />
 							і місце навчання кадрів тягне у себе.
 						</p>
 					</li>
 					<li>
-						<h3>ПЛАНУВАННЯ</h3>
-						<p>
+						<h3 class="skills-title">ПЛАНУВАННЯ</h3>
+						<p class="skills-text">
 							Так само консультація з широким
 							<br />
 							активом значною мірою зумовлює.
 						</p>
 					</li>
 					<li>
-						<h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-						<p>
+						<h3 class="skills-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+						<p class="skills-text">
 							Значимість цих проблем настільки
 							<br />
 							очевидна, що реалізація планових
@@ -78,9 +84,11 @@
 					</li>
 				</ul>
 			</section>
+
+			<!-- =========Секція 3========= -->
 			<section>
-				<ul>
-					<h2>Чим ми займаємося</h2>
+				<ul class="list">
+					<h2 class="title">Чим ми займаємося</h2>
 					<li>
 						<img src="images/webstudio-img1.jpg" alt="Клавіатура, планшет" width="370" height="294" />
 					</li>
@@ -92,42 +100,47 @@
 					</li>
 				</ul>
 			</section>
+
+			<!-- ==========Секція 4/Команда ==========-->
 			<section>
-				<h2>Наша команда</h2>
-				<ul>
+				<h2 class="title">Наша команда</h2>
+				<ul class="list">
 					<li>
 						<img src="images/webstudio-team-img1.jpg" alt="Фото людини" width="270" height="260" />
-						<h3>Ігор Дем'яненко</h3>
-						<p>Product Designer</p>
+						<h3 class="team-title">Ігор Дем'яненко</h3>
+						<p class="team-text">Product Designer</p>
 					</li>
 					<li>
 						<img src="images/webstudio-team-img2.jpg" alt="Фото людини" width="270" height="260" />
-						<h3>Ольга Рєпіна</h3>
-						<p>Frontend Developer</p>
+						<h3 class="team-title">Ольга Рєпіна</h3>
+						<p class="team-text">Frontend Developer</p>
 					</li>
 					<li>
 						<img src="images/webstudio-team-img3.jpg" alt="Фото людини" width="270" height="260" />
-						<h3>Микола Тарасов</h3>
-						<p>Marketing</p>
+						<h3 class="team-title">Микола Тарасов</h3>
+						<p class="team-text">Marketing</p>
 					</li>
 					<li>
 						<img src="images/webstudio-team-img4.jpg" alt="Фото людини" width="270" height="260" />
-						<h3>Михайло Єрмаков</h3>
-						<p>UI Designer</p>
+						<h3 class="team-title">Михайло Єрмаков</h3>
+						<p class="team-text">UI Designer</p>
 					</li>
 				</ul>
 			</section>
 		</main>
-		<footer>
-			<a href="WebStudio">WebStudio</a>
-			<address>
+
+		<!-- ==========Підвал/Футер========= -->
+		<footer class="footer">
+			<!-- prettier-ignore -->
+			<a class="logo link" href="WebStudio">Web<span class="logo-footer">Studio</span></a>
+			<address class="address">
 				м. Київ, пр-т Лесі Українки, 26
-				<ul>
+				<ul class="list">
 					<li>
-						<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 					</li>
 					<li>
-						<a href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+						<a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
 					</li>
 				</ul>
 			</address>
